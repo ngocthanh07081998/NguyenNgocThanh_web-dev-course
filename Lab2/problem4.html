@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form name="register" method="GET" action=".">
+		<table class="table1" border="1">
+			<tr>
+				<th>
+					<label for="last-name">Last Name</label>
+				</th>
+				<td>
+					<input id="last-name" type="textbox" name="" placeholder="Nakov">
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label for="first-name">First Name</label>
+				</th>
+				<td>
+					<input id="first-name" type="textbox" name="" placeholder="Svellin">
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label for="address">Address</label>
+				</th>
+				<td>
+					<textarea id="address" name="comment-box" rows="6" cols="30" placeholder="17 Hristo Botev Str. floor 3, apt. 12"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label for="cty">City</label>
+				</th>
+				<td>
+					<table class="table2" style="border: none;">
+						<tr>
+							<td>
+								<input id="cty" type="textbox" name="" placeholder="Kaspichan">
+							</td>
+							<th>
+								<label for="state">State</label>
+							</th>
+							<td>
+								<input id="state" type="textbox" name="">
+							</td>
+						</tr>
+					</table>					
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label for="zip-code">Zip/Postal Code</label>
+				</th>
+				<td>
+					<input id="zip-code" type="textbox" name="" placeholder="9325">
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label for="country">Country</label>
+				</th>
+				<td>
+					<select id="country">
+						<option value="bul" selected="selected">Bulgaria</option>
+						<option value="usa">USA</option>
+						<option value="vn">Vietnam</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label for="phone">Phone (country code, area code, number)</label>
+				</th>
+				<td>(+ <input id="phone" type="textbox" name="" placeholder="359"> ) 
+					<input id="phone" type="textbox" name="" placeholder="88"> - 
+					<input id="phone" type="textbox" name="" placeholder="8334343">
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label for="mail">E-mail</label>
+				</th>
+				<td>
+					<input id="mail" type="email" name="" placeholder="nakov@kaspichan.org">
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label for="birth">Birth date</label>
+				</th>
+				<td>Month <input id="birth" type="textbox" name="" placeholder="06">
+					Day <input id="birth" type="textbox" name="" placeholder="14"> 
+					Year (4 digit) <input id="birth" type="textbox" name="" placeholder="1980"></td>
+				</tr>
+				<tr>
+					<th>
+						<label for="gender">Gender</label>
+					</th>
+					<td>
+						<select id="gender">
+							<option value="male" selected="selected">Male</option>
+							<option value="female">Female</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="start-date">Starting date</label>
+					</th>
+					<td>
+						<input type="radio" name=""> Spring 2006 
+						<input type="radio" name="">Summer 2006
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="comment">Comments/Questions</label>
+					</th>
+					<td>
+						<textarea id="comment" name="comment-box" rows="7" cols="30" placeholder="Please send me nor information about the lodging"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div style="margin-left: 400px">
+							<button>Submit</button>
+							<input type="reset" name="reset-button" value="Clear This Form">							
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+	</html>

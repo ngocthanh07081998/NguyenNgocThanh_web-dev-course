@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Form</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form name="html-form" method="GET" action=".">
+		<div>
+			<label for="name">Member name:</label>
+			<input id="name" type="text" name="member" required="true"><b> *req</b>
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input id="email" type="email" name="email" required="true"><b> *req</b>
+		</div>
+		<div>
+			<label for="school">School:</label>
+			<input id="school" type="text" name="school" required="true"><b> *req</b>
+		</div>
+
+		<input type="image" src="./submit-button.jpg" style="width: 50px; height: auto;" name="subBtn" alt="submit">
+	</form>
+</body>
+</html>
