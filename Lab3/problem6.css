@@ -1,0 +1,31 @@
+header{
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+body{
+	background-color: #A9A9A9;
+}
+.second-link{
+	background-color: #D3D3D3;
+}
+.last-link{
+	text-decoration: underline;
+}
+footer{
+	margin-top: 15px;
+	text-align: center;
+}
+h1, h2{
+	color: #F9F9D1;
+}
+div{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.footnote{
+	font-size: 13px;
+}

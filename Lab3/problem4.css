@@ -1,0 +1,31 @@
+table{
+	background-color: #595959;
+}
+.orange-color{
+	color: orange;
+}
+.yellow-color{
+	color: #D2C18A;
+}
+.others{
+	color: #9D9F99;
+}
+td{
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-right: 80px;
+}
+.title{
+	color: white;
+	padding-right: 20px;
+}
+.right-align{
+	margin-left: 120px;
+}
+.red-color{
+	color: red;
+	padding-top: 0px;
+}
+.special{
+	padding-bottom: 0px;
+}

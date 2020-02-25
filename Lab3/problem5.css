@@ -1,0 +1,29 @@
+th{
+	font-weight: normal;
+	text-align: left;
+	color: white;
+}
+img{
+	width: 20px;
+	height: auto;
+}
+thead{
+	background-color: #59BD06;
+}
+.yellow{
+	background-color: #ECECD8;
+}
+td{
+	width: 100px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+table{
+	border-collapse: collapse;
+}
+table td, th{
+	border: 1px solid #ddd;
+}
+.name{
+	padding-right: 40px;
+}

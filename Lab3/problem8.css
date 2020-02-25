@@ -1,0 +1,20 @@
+img{
+	width: 200px;
+	height: auto;
+	padding-top: 10px;
+}
+section{
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	border-right: 1px solid #eee;
+	width: 14%;
+	font: 14px Helvetica,Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
+}
+h3{
+	font-weight: normal;
+
+}
+.price{
+	color: red;
+}

@@ -1,0 +1,29 @@
+a{
+	text-decoration: none;
+	color: black;
+	background-color: white;
+}
+a:hover{
+	color: blue;
+	background-color: yellow;
+}
+.first-table td{
+	width: 150px;
+}
+.first-col{
+	padding-left: 20px;
+}
+.second-table td, th{
+	border: 2px solid black;
+}
+.second-table{
+	border-collapse: collapse;
+}
+.second-table td, th{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+}
+.score{
+	width: 50px;
+}

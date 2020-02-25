@@ -1,0 +1,92 @@
+hr{
+	border-top: 1px dashed #8c8b8b;
+	height: 1px;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+	padding-left: 25px;
+}
+li{
+	padding-bottom: 7px;
+	margin-bottom: 7px;
+}
+section{
+	border-top: 2px solid #eee;
+	border-left: 2px solid #eee;
+	border-bottom: 2px solid #eee;
+	border-right: 2px solid #eee;
+	width: 500px;
+}
+.news{
+	margin: 0;
+	padding-top: 4px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+}
+.time{
+	padding-top: 1px;
+	padding-left: 12px;
+	font-size: x-small;
+	color: #C1BDC1;
+}
+span{
+	color: grey;
+}
+.title-icon{
+	height: 20px;
+	width: auto;
+}
+.title{
+	font-weight: 700;
+	color: #2F7CAC;
+	margin: 0;
+	margin-bottom: 5px;
+	padding-left: 12px;
+}
+.play-button{
+	width: 20px;
+	height: auto;
+}
+.news-title{
+	margin: 0;
+	font-weight: 1000;
+	font-size: large;
+	padding-left: 12px;
+	margin-bottom: 2px;
+}
+.play-icon{
+	width: 15px;
+	height: auto;
+}
+
+/*section2*/
+h3{
+	padding-left: 12px;
+}
+.deal-content{
+	padding-left: 12px;
+	padding-right: 12px;
+	text-align: justify;
+}
+.avatar{
+	width: 30px;
+	height: auto;
+	float: left;
+	border-radius: 100%;
+
+}
+.info{
+	padding-left: 12px;
+	margin-top: 12px;
+    line-height: 30px;
+}
+.user{
+	color: hsl(188, 100%, 42%);
+	font-weight: 700;
+	padding-left: 15px;
+}
