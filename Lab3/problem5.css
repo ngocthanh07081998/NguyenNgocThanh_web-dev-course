@@ -1,7 +1,13 @@
+body{
+	font-family: Arial, sans-serif;
+}
+
 th{
 	font-weight: normal;
 	text-align: left;
 	color: white;
+	border: 1px solid #ddd;
+	padding: 5px;
 }
 img{
 	width: 20px;
@@ -17,13 +23,12 @@ td{
 	width: 100px;
 	padding-top: 2px;
 	padding-bottom: 2px;
+	border: 1px solid #ddd;
+	padding: 5px;
 }
 table{
 	border-collapse: collapse;
 }
-table td, th{
-	border: 1px solid #ddd;
-}
 .name{
-	padding-right: 40px;
+	width: 200px;
 }

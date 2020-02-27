@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Week 02 - HTML Forms</title>
+</head>
+<body>
+	<form name="myForm" method="post" action=".">
+		<!-- Method: Get: Du lieu khi gui duoc hien thi tren browsers, gioi han do dai, co the xem lich su, bookmark. Duoc dung trong tim kiem; Post: khong hien thi du lieu nguoi dung gui tren browsers, khong gioi han do dai, khong the xem lai lich su, dung cho du lieu nhay cam -->
+		<fieldset>
+			<legend>Sign in Form</legend>
+			<p>Email: </p>
+			<input type="email" name="username" placeholder="example@gmail.com" required="true" style="width: 200px"><br>
+			<p>Password: </p>
+			<input type="password" name="password" placeholder="********" required="true" style="width: 200px"><br>
+
+			<p>Comment: </p>
+			<textarea name="comment-box" rows="8" cols="30"></textarea><br>
+			<hr>
+			<p>Gender:</p>
+			<input type="radio" name="male" value="Male">
+			<label for="fn">Male</label>
+			<input type="radio" name="female" value="Female">
+			<label for="fn">Female</label>
+			<br>
+			<hr>
+			City:
+			<select name="city">
+				<option value="bd" selected="selected">Binh Duong</option>
+				<option value="hcm">Ho Chi Minh</option>
+				<option value="dn">Dong Nai</option>
+			</select>
+			<hr>
+			Year:
+			<input type="number" name="" min="1900" max="2020" placeholder="1900"><hr>
+			<input type="submit" name="submit-button" value="Submit">
+			<input type="reset" name="reset-button" value="Reset">
+		</fieldset>
+
+		
+		<!-- <input type="radio" name="city" value="Binh Duong">Binh Duong<br>
+		<input type="radio" name="city" value="Ho Chi Minh">Ho Chi Minh<br>
+		<input type="radio" name="city" value="Dong Nai">Dong Nai<br> -->
+
+		<fieldset>
+			<legend>Sample Vid</legend>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/SNES5Y-tYxM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</fieldset>
+	</form>
+
+	
+</body>
+</html>

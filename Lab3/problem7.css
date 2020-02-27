@@ -1,3 +1,6 @@
+body{
+	font-family: Arial, sans-serif;
+}
 hr{
 	border-top: 1px dashed #8c8b8b;
 	height: 1px;
@@ -20,7 +23,7 @@ section{
 	border-left: 2px solid #eee;
 	border-bottom: 2px solid #eee;
 	border-right: 2px solid #eee;
-	width: 500px;
+	width: 1000px;
 }
 .news{
 	margin: 0;
@@ -41,12 +44,27 @@ span{
 	height: 20px;
 	width: auto;
 }
-.title{
-	font-weight: 700;
+h3{
 	color: #2F7CAC;
 	margin: 0;
+	margin-top: 6px;
 	margin-bottom: 5px;
-	padding-left: 12px;
+}
+.title {
+	margin-left: 12px;
+}
+.title h3::before{
+	content: "";
+    position: absolute;
+	width: 5px;
+	left: 5px;
+	top: 2px;
+	bottom: 2px;
+	transform: skew(-20deg);
+	background-color: rgb(221, 51, 51);
+	height: 15px;
+	margin-left: 18px;
+	margin-top: 15px;
 }
 .play-button{
 	width: 20px;
@@ -65,7 +83,7 @@ span{
 }
 
 /*section2*/
-h3{
+h2, h3{
 	padding-left: 12px;
 }
 .deal-content{
@@ -83,10 +101,15 @@ h3{
 .info{
 	padding-left: 12px;
 	margin-top: 12px;
-    line-height: 30px;
+	line-height: 30px;
+	margin-bottom: 12px;
 }
 .user{
-	color: hsl(188, 100%, 42%);
+	color: #14C0DB;
 	font-weight: 700;
 	padding-left: 15px;
+}
+.sport-title{
+	padding-left: 10px;
+	display: inline-flex;
 }
