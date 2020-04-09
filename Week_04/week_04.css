@@ -1,0 +1,140 @@
+h1{
+	color: white;
+	background-color: grey;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 10px;
+	margin: 0;
+}
+
+.footer{
+	color: white;
+	background-color: grey;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+section::after, article::after {
+	content: " ";
+	clear: both;
+	display: block;
+	height: 0;
+}
+
+section{
+	margin-bottom: 20px;
+}
+
+.first-li{
+
+	background-color: #33B5E7;
+	margin-bottom: 10px;
+	color: white;
+	width: 80%;
+	padding: 5px 5px 5px 5px;
+}
+
+ul{
+	padding-left: 0;
+	list-style: none;
+}
+
+aside{
+	float: left;
+	width: 30%;
+}
+
+main{
+	float: right;
+	width: 70%;
+}
+
+/*Section 2*/
+.price{
+	color: red;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+img{
+	display: block;
+	height: auto;
+	padding: 0;
+	width: 100%;
+	max-width: 100%;
+    height: auto;
+    margin: 15px auto;
+    border: 0;
+}
+
+.poduct-li{
+	border-top: 1px solid #eee;
+	border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    width: 25%;
+    padding: 10px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/*Section3*/
+h3{
+	margin: 0 0 15px 0;
+}
+.avatar{
+	width: 30px;
+	height: auto;
+	float: left;
+	border-radius: 100%;
+	margin-top: 0;
+}
+
+.info{
+	padding-left: 12px;
+	margin-top: 12px;
+	line-height: 30px;
+	margin-bottom: 12px;
+}
+
+.user{
+	color: #14C0DB;
+	font-weight: 700;
+	margin-left: 9px;
+
+}
+
+.extra-info{
+	color: grey;
+	font-weight: 700;
+}
+
+img.spoiler{
+	border-radius: 12px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+}
+
+.image{
+	float: left;
+	display: block;
+	width: 29%;
+}
+
+.content{
+	float: right;
+	width: 65%;
+	display: block;
+}
+
+.inside-content{
+	float: left;
+}
+
+article{
+	margin-bottom: 40px;
+}
