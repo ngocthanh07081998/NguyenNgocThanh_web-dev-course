@@ -1,0 +1,155 @@
+		header, footer{
+			background-color: grey;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			color: white;
+			padding-left: 10px;
+		}
+
+		footer{
+			margin-top: 25px;
+		}
+
+		.header, .footer{
+			margin: 5px 0 5px 0;
+		}
+
+		.section-1{
+			margin-bottom: 20px;
+		}
+
+		li{
+			margin: 0;
+			list-style: none;
+			background-color: #33B5E7;
+			margin-bottom: 10px;
+			color: white;
+			width: 100%;
+			padding: 5px 5px 5px 5px;
+		}
+
+		ul{
+			padding-left: 0;
+			padding-top: 15px;
+		}
+
+		main{
+			width: 100%;
+			height: 100%;
+			border-top: 1px solid #eee;
+			border-left: 1px solid #eee;
+			border-bottom: 1px solid #eee;
+			box-sizing: border-box;
+			margin-top: 15px;
+		}
+
+		h1{
+			margin: 0;
+		}
+
+		img{
+			width: 100%;
+			height: auto;
+		}
+
+		.section-title{
+			border-bottom: 2px solid orange;
+			display: inline-block;
+		}
+
+		.row{
+			margin-top: 20px;
+		}
+
+		.main-content{
+			padding-left: 10px;
+		}
+
+		.avatar{
+			width: 30px;
+			height: auto;
+			border-radius: 50%;
+			margin: 0;
+		}
+
+		.info{
+			padding-left: 12px;
+			margin-top: 12px;
+			line-height: 30px;
+			margin-bottom: 12px;
+			padding-bottom: 20px;
+		}
+
+		.user{
+			color: #14C0DB;
+			font-weight: 700;
+			margin-left: 9px;
+
+		}
+
+		.extra-info{
+			color: grey;
+			font-weight: 700;
+		}
+
+		img.spoiler{
+			border-radius: 12px;
+			width: 100%;
+			height: auto;
+			max-width: 100%;
+		}
+
+		.heading{
+			font-weight: 500;
+			font-size: 20px;
+		}
+
+		.content{
+			display: block;
+		}
+
+		article.news {
+			margin-bottom: 20px;
+			width: 100%;
+			border: 1px solid grey;
+			border-radius: 12px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.percent-deal{
+			position: absolute;
+			top: 15px;
+			right: 25px;
+			display: flex;
+			background-image: url(https://frontend.tikicdn.com/_new-next/static/img/icons/product/deal-tag.png);
+			background-size: 40px 36px;
+			width: 40px;
+			height: 36px;
+			color: white;
+		}
+
+
+
+		.item{
+			box-shadow: rgba(0, 0, 0, 0.1) 0 0 20px;
+		}
+
+		.price{
+			font-size: 16px;
+			font-weight: 500;
+			padding-left: 10px;
+			padding-bottom: 20px;
+		}
+
+		.original-deal{
+			text-decoration: line-through;
+			color: rgb(120, 120, 120);
+			margin-left: 8px;
+		}
+
+		.title{
+			font-size: 15px;
+			font-weight: 500;
+			padding-left: 10px;
+		}
