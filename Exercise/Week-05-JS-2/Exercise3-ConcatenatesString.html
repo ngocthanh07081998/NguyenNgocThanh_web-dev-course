@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Concatinate String</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<script type="text/javascript">
+		function concatenateStr() {
+			var str = "";
+			for (var i = 0; i < 4; i++) {
+				str += `
+					<div class="col-xl-3 col-12 item">
+						<article>
+							<a href="">
+							<img src="https://tikicdn.com/noi-com.jpg" alt="Nồi cơm điện">
+							</a>
+							<div class="giam-gia">-50%</div>
+							<a href=""><div class="ten-sp">Nồi cơm điện vừa bán vừa cho</div></a>
+							<div class="gia">
+							2.000.000 đ
+							<span class="gia-goc">5.000.000 đ</span>
+							</div>
+						</article>
+					</div>
+				`;
+			}
+			return str;
+		}
+
+		console.log(concatenateStr());
+
+	</script>
+</body>
+</html>

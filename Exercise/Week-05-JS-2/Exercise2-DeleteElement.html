@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete Element</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		var num_list = [1,2,3,4,5];
+		let key = 2;
+		console.log("Before Removing Element");
+		print(num_list);
+		remove_Element(num_list,key);
+		console.log("After Removing Element");
+		print(num_list);
+
+		function print(num_list) {
+			for (var i = 0; i < num_list.length; i++) {
+				console.log(num_list[i]);
+			}
+		}
+
+		function remove_Element(num_list,key) {
+			for (var i = 0; i < num_list.length; i++) {
+				if (num_list[i] == key) {
+					num_list.splice(i,1);
+				}
+			}
+		}
+	</script>
+</body>
+</html>
