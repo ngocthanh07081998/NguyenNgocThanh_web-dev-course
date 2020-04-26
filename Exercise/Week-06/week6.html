@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		function human(_firstName,_lastName){
+			let person = {};
+			person.firstName = _firstName;
+			person.lastName = _lastName;
+			person.toString = function(){
+				console.log(person.firstName);
+			};
+			return person;
+		}
+
+		function human2(_firstName,_lastName){
+			return {
+				firstName : _firstName,
+				lastName : _lastName,
+				toString : function(){
+					console.log(this.firstName);
+				}
+			};
+		}
+		let a = human2("Nguyen","B");
+		// let b = human("Nguyen","A");
+		a.toString();
+	</script>
+</body>
+</html>

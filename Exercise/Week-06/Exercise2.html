@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete Product by ID</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		function product_Object(_id,_name,_image,_price,_discountedPrice){
+			return {
+				id : _id,
+				name : _name,
+				image : _image,
+				price : _price,
+				discountPrice : _discountedPrice,
+				toString : function(){
+					return this.name;
+				}
+			};
+		}
+
+		function deleteById(_productList,_id){
+			for (var i = 0; i < _productList.length; i++) {
+				if (_productList[i].id == _id) {
+					_productList.splice(i, 1);
+				}
+					
+			}
+		}
+
+		let productA, productB, productC;
+
+		productA = product_Object(1,'productA','imageA','100','99');
+		productB = product_Object(2,'productB','imageB','100','99');
+		productC = product_Object(3,'productC','imageC','100','99');
+
+		let product_List = [productA,productB,productC];
+		console.log('Before delete');
+		for (var i = 0; i < product_List.length; i++) {
+			console.log(product_List[i].toString());
+		}
+
+		let id = 2;
+		deleteById(product_List,id);
+
+		console.log('After delete');
+		for (var i = 0; i < product_List.length; i++) {
+			console.log(product_List[i].toString());
+		}
+	</script>
+</body>
+</html>
