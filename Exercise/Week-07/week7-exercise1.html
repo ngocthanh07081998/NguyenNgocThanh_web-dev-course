@@ -74,7 +74,7 @@
 			// 	$(this).closest("tr").remove();
 			// });
 
-			$(".del-button").on("click", function(){
+			$("table").on("click", ".del-button", function(){
 				$(this).parents("tr").remove();
 			});
 
