@@ -74,7 +74,7 @@
 			// 	$(this).closest("tr").remove();
 			// });
 
-			$(".del-button").on("click", function(){
+			$("table").on("click",".del-button", function(){
 				$(this).parents("tr").remove();
 			});
 
@@ -87,7 +87,7 @@
 				<th scope="row"></th>
 				<td>`+ first + `</td>
 				<td>`+ last + `</td>
-				<td><a href="" class="del-button">Xóa</a></td>
+				<td><a href="#" class="del-button">Xóa</a></td>
 				</tr>
 				`;
 
