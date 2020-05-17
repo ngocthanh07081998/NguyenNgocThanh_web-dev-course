@@ -1,0 +1,84 @@
+ul{
+	list-style: none;
+}
+.main-nav{
+	background-color: #294a70;
+	border-bottom: 5px solid #f4a024;
+	display: block;
+	float: left;
+	width: 100%;
+}
+a{
+	color: #fff;
+}
+nav{
+	display: block;
+}
+ul{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.mainlist-item{
+	position: relative;
+	display: inline-block;
+	margin-bottom: 0;
+	float: left;
+}
+.sublist{
+	display: none;
+}
+ul .mainlist-item:first-child > a {
+	border-left: 1px solid #fff;
+}
+.main-navigation li a:hover, .main-navigation li.current-menu-item > a, .main-navigation li.current_page_item > a, .main-navigation li:hover > a{
+	background: #f4a024;
+	color: #fff;
+	text-decoration: none;
+
+}
+.main-navigation ul li a {
+	color: #ffffff;
+	border-right: 1px solid #fff;
+	border-bottom: 0.5px solid #294a70;
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 10px 25px;
+	position: relative;
+	z-index: 99;
+}
+.main-navigation ul li.menu-item-has-children > a::after, .main-navigation ul li.page_item_has_children > a::after {
+	content: "\f107";
+	font-family: FontAwesome;
+	margin-left: 10px;
+	margin-right: 0;
+	position: absolute;
+	right: 10px;
+	top: 12px;
+}
+.menu-item-has-children:hover > .sublist{
+	display: block;
+}
+.main-navigation ul ul {
+	background: #294a70 none repeat scroll 0 0;
+	box-shadow: 0 1px 2px;
+	display: none;
+	left: 0;
+	margin: 0;
+	min-width: 200px;
+	position: absolute;
+	top: 44px;
+	z-index: 9999;
+}
+.main-navigation ul ul a {
+	border-bottom: 1px solid #dddddd;
+	border-left: none;
+	border-right: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	padding: 9px 15px;
+	text-align: left;
+	width: 100%;
+}
