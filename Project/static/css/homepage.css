@@ -563,9 +563,9 @@ img {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 }
 
-.glyphicon-chevron-left:before {
+/*.glyphicon-chevron-left:before {
 	content: "\e079";
-}
+}*/
 
 .carousel-control.right {
 	left: auto;
@@ -573,9 +573,9 @@ img {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
 
-.glyphicon-chevron-right:before {
+/*.glyphicon-chevron-right:before {
 	content: "\e080";
-}
+}*/
 
 .voip-cat-title {
 	overflow: hidden;
