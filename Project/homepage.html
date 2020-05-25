@@ -4,18 +4,29 @@
 	<title>VOIPMART &#8211; TỔNG ĐÀI IP XORCOM</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no"/>
-	<!-- 	<link rel="stylesheet" type="text/css" href="https://www.voipmart.vn/wp-content/themes/voip/css/bootstrap.min.css"/> -->
+
 	<link rel="shortcut icon" href="./static/img/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="https://www.voipmart.vn/wp-content/themes/voip/css/bootstrap.min.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'/>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./static/css/homepage.css">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.voipmart.vn/wp-content/themes/voip/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<header>
 		<nav id="voip-menu" class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#voip-menu-items">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
 					<a class="navbar-brand" href="https://www.voipmart.vn">
 						<div class="voip-header-logo"></div>
 					</a>
@@ -167,13 +178,12 @@
 	</header>
 
 	<section class="slider">
-		<div id="voip-slider" style="overflow: hidden; height: 334.461px;" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
+		<div id="voip-slider" style="overflow: hidden; height: 334.461px;" class="carousel slide" data-ride="carousel">	
 
 			<ol class="carousel-indicators">
-				<li data-target="#voip-slider" data-slide-to="0" class=""></li>
+				<li data-target="#voip-slider" data-slide-to="0" class="active"></li>
 				<li data-target="#voip-slider" data-slide-to="1" class=""></li>
-				<li data-target="#voip-slider" data-slide-to="2" class="active"></li>
+				<li data-target="#voip-slider" data-slide-to="2" class=""></li>
 				<li data-target="#voip-slider" data-slide-to="3" class=""></li>
 				<li data-target="#voip-slider" data-slide-to="4" class=""></li>
 				<li data-target="#voip-slider" data-slide-to="5" class=""></li>
@@ -181,16 +191,15 @@
 				<li data-target="#voip-slider" data-slide-to="7" class=""></li>
 				<li data-target="#voip-slider" data-slide-to="8" class=""></li>
 			</ol>
-
-			<!-- Wrapper for slides -->
+			
 			<div class="carousel-inner">
-				<div class="item">
+				<div class="item active">
 					<img src="https://www.voipmart.vn/wp-content/uploads/2016/10/voipmart_ego_slider.jpg">
 				</div>	
 				<div class="item">
 					<img src="https://www.voipmart.vn/wp-content/uploads/2014/09/voipmart_wifi_phone_slide.jpg">
 				</div>	
-				<div class="item active">
+				<div class="item">
 					<img src="https://www.voipmart.vn/wp-content/uploads/2015/10/voipmart_xorcom_spark_slide.jpg">
 				</div>	
 				<div class="item">
@@ -212,9 +221,8 @@
 					<img src="https://www.voipmart.vn/wp-content/uploads/2016/07/slider_xorcom_twinstar.png">
 				</div>	
 			</div>
-			<i class="far fa-angle-right"></i>
 
-			<!-- Controls -->
+			
 			<a class="left carousel-control" href="#voip-slider" data-slide="prev">
 				<span class="glyphicon-chevron-left "><i class="fa fa-chevron-left"></i></span>
 
