@@ -1,0 +1,134 @@
+*{
+	box-sizing: border-box;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+	display: block;
+}
+
+a{
+	color: #2c3e50;
+}
+
+a:hover{
+	text-decoration: none;
+}
+.article-title{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	margin-top: 40px;
+	border-left: 3px solid #662d91;
+	border-bottom: 1px dashed #bdc3c7;
+	border-top: 1px dashed #bdc3c7;
+	background-color: #f8f8f8;
+}
+
+.article-content .product{
+	margin-top: 20px;
+	background-color: #f8f8f8;
+	overflow: hidden;
+	position: relative;
+}
+
+.img-responsive{
+	width: 100%;
+	height: auto;
+}
+
+.product-info .product-title{
+	font-size: 14px;
+	font-weight: bold;
+	color: #2c3e50;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.product-info .code{
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #662d91;
+}
+
+.product-info .old-price{
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: grey;
+	text-decoration: line-through;
+}
+
+.product-info .cost{
+	font-weight: bold;
+	color: #e83d2b;
+	padding-left: 10px;
+}
+
+.product-info .discount{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 40px;
+	width: 40px;
+	color: #fff;
+	font-weight: bold;
+	background-color: #e83d2b;
+	text-align: center;
+	line-height: 40px;
+}
+
+.side-product{
+	margin-top: 20px;
+	border-bottom: 1px dotted #bdc3c7;
+	padding-bottom: 20px;
+}
+
+.inside-side-product{
+	background-color: #f8f8f8;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.side-product .side-title{
+	width: 100%;
+	padding-right: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #2c3e50;
+}
+
+.side-product .side-old-price{
+	font-size: 14px;
+	font-weight: bold;
+	color: #7f8c8d;
+	padding-top: 40px;
+	text-decoration: line-through;
+}
+
+.side-product .side-cost{
+	font-size: 18px;
+	font-weight: bold;
+	color: #e83d2b;
+}
+
+.side-product .side-off{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	height: 40px;
+	width: 40px;
+	color: #fff;
+	font-weight: bold;
+	background-color: #e83d2b;
+	text-align: center;
+	line-height: 40px;
+}
