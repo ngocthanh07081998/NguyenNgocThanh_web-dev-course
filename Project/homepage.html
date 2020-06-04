@@ -6,27 +6,32 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no"/>
 
 	<link rel="shortcut icon" href="./static/img/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="https://www.voipmart.vn/wp-content/themes/voip/css/bootstrap.min.css"/>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'/>
-	<link rel="stylesheet" href="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css"/>
+
+	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- CSS file -->
 	<link rel="stylesheet" type="text/css" href="./static/css/homepage.css">
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text/javascript" src="https://www.voipmart.vn/wp-content/themes/voip/js/bootstrap.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<!-- JS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
-		<nav id="voip-menu" class="navbar navbar-inverse">
+		<nav id="voip-menu" class="navbar navbar-expand-md bg-dark" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#voip-menu-items">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#voip-menu-items">
+						<div><i class="fa fa-align-justify" style="color: grey;"></i></div>
 					</button>
-					
+
 					<a class="navbar-brand" href="https://www.voipmart.vn">
 						<div class="voip-header-logo"></div>
 					</a>
@@ -37,7 +42,9 @@
 						<li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-16">
 							<a href="https://www.voipmart.vn/">Trang chủ</a>
 						</li>
-						<li id="menu-item-82" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-82 dropdown"><a href="https://www.voipmart.vn/./products" data-toggle="dropdown" class="dropdown-toggle">Sản phẩm<b class="caret"></b></a>
+						<li id="menu-item-82" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-82 dropdown">
+							<a href="https://www.voipmart.vn/./products" data-toggle="dropdown" class="dropdown-toggle">Sản phẩm<b class="caret"></b>
+							</a>
 							<ul class="sub-menu dropdown-menu voip-dropdown-menu-group-3">
 								<li id="menu-item-236" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-236 voip-dropdown-menu-item"><a href="https://www.voipmart.vn/./products/tong-dai-dien-thoai-ip">TỔNG ĐÀI IP</a>
 									<ul class="sub-menu">
@@ -174,14 +181,13 @@
 				</div>
 			</div>
 		</nav>
-		<div id="voip-menu-back" style="height: 50px;"></div>
 	</header>
 
 	<section class="slider">
-		<div id="voip-slider" style="overflow: hidden; height: 334.461px;" class="carousel slide" data-ride="carousel">	
-
+		<div id="voip-slider" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
 			<ol class="carousel-indicators">
-				<li data-target="#voip-slider" data-slide-to="0" class="active"></li>
+				<li data-target="#voip-slider" data-slide-to="0" class=""></li>
 				<li data-target="#voip-slider" data-slide-to="1" class=""></li>
 				<li data-target="#voip-slider" data-slide-to="2" class=""></li>
 				<li data-target="#voip-slider" data-slide-to="3" class=""></li>
@@ -189,11 +195,12 @@
 				<li data-target="#voip-slider" data-slide-to="5" class=""></li>
 				<li data-target="#voip-slider" data-slide-to="6" class=""></li>
 				<li data-target="#voip-slider" data-slide-to="7" class=""></li>
-				<li data-target="#voip-slider" data-slide-to="8" class=""></li>
+				<li data-target="#voip-slider" data-slide-to="8" class="active"></li>
 			</ol>
-			
+
+			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
-				<div class="item active">
+				<div class="item">
 					<img src="https://www.voipmart.vn/wp-content/uploads/2016/10/voipmart_ego_slider.jpg">
 				</div>	
 				<div class="item">
@@ -217,15 +224,14 @@
 				<div class="item">
 					<img src="https://www.voipmart.vn/wp-content/uploads/2014/04/voipmart_gw_slide.jpg">
 				</div>	
-				<div class="item">
+				<div class="item active">
 					<img src="https://www.voipmart.vn/wp-content/uploads/2016/07/slider_xorcom_twinstar.png">
 				</div>	
 			</div>
 
-			
+			<!-- Controls -->
 			<a class="left carousel-control" href="#voip-slider" data-slide="prev">
-				<span class="glyphicon-chevron-left "><i class="fa fa-chevron-left"></i></span>
-
+				<span class="glyphicon-chevron-left"><i class="fa fa-chevron-left"></i></span>
 			</a>
 			<a class="right carousel-control" href="#voip-slider" data-slide="next">
 				<span class="glyphicon-chevron-right"><i class="fa fa-chevron-right"></i></span>
@@ -233,445 +239,756 @@
 		</div>
 	</section>
 
-	<div style="color:transparent;"><a style="color:transparent;" href="https://www.voipmart.vn/uncategorized/the-basics-of-help-with-assignment-writing-service.html">write my essay cheap</a>
-	</div>
-
-	<section class="item-list-1">
-		<div class="voip-cat-title"><a href="https://www.voipmart.vn/./products/san-pham-ua-chuong"><h2 class="title">Sản phẩm ưa chuộng</h2></a></div>
+	<section class="item-list">
+		<div class="voip-cat-title">
+			<a href="https://www.voipmart.vn/./products/san-pham-ua-chuong">
+				<h2 class="title">Sản phẩm ưa chuộng</h2>
+			</a>
+		</div>
 
 		<div class="voip-products-show">
 			<div class="row-fluid">
+
 				<div class="voip-product-item col-md-2" product-id="5759">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="loa-hoi-nghi-khong-day-bluetooth-konftel-ego" src="https://www.voipmart.vn/wp-content/uploads/2019/12/loa-hoi-nghi-khong-day-bluetooth-konftel-ego-300x300.jpg" style="width: 207px;">
-						<div class="void-product-sale-off">-35%</div>
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=5759" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 57px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/loa-hoi-nghi-khong-day-bluetooth-nfc-konftel-ego.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 111px;">Chi tiết</a>
-					</div>	
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="loa-hoi-nghi-khong-day-bluetooth-konftel-ego" src="https://www.voipmart.vn/wp-content/uploads/2019/12/loa-hoi-nghi-khong-day-bluetooth-konftel-ego-300x300.jpg" class="voip-product-image">
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/loa-hoi-nghi-khong-day-bluetooth-nfc-konftel-ego.html"><h2 class="title">Loa Hội Nghị Không Dây Bluetooth NFC Konftel Ego</h2></a>
-						<div class="cost"><div class="or-cost">6.450.000 đ</div><br>4.186.000 đ</div>
-					</div>
+									<div class="void-product-sale-off">-35%</div>
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=5759" class="buy">Đặt hàng</a>
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/loa-hoi-nghi-khong-day-bluetooth-nfc-konftel-ego.html" class="detail">Chi tiết</a>
+								</div>
+								
+
+
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/loa-hoi-nghi-khong-day-bluetooth-nfc-konftel-ego.html">
+									<h2 class="title">Loa Hội Nghị Không Dây Bluetooth NFC Konftel Ego</h2>
+								</a>
+								<div class="cost">
+									<p class="old-price">6.450.000 đ</p>
+									<p>4.186.000 đ</p>
+								</div>
+							</div>
+						</div>
+					</article>
 				</div>
+
 				<div class="voip-product-item col-md-2" product-id="4138">
-					<div class="voip-product-thumbnail" style="width: 208px; height: 208px;"><img alt="tong-dai-ip-Spark-1000-nu" src="https://www.voipmart.vn/wp-content/uploads/2017/09/tong-dai-ip-Spark-1000-nu-300x300.jpg" style="width: 206px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4138" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 57px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000nu.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 110px;">Chi tiết</a>
-					</div>	
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-Spark-1000-nu" src="https://www.voipmart.vn/wp-content/uploads/2017/09/tong-dai-ip-Spark-1000-nu-300x300.jpg" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4138" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000nu.html" class="detail">Chi tiết</a>
+								</div>
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000nu.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000/NU</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000nu.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000/NU</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+					</article>
+
 				</div>
+
 				<div class="voip-product-item col-md-2" product-id="4130">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 57px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 111px;">Chi tiết</a>
-					</div>	
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail">Chi tiết</a>
+								</div>
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
-				</div>
-				<div class="voip-product-item col-md-2" product-id="4251">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="dien-thoai-ip-atcom-a11" src="https://www.voipmart.vn/wp-content/uploads/2016/05/A111-300x300.png" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4251" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 57px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/dien-thoai-ip-atcom-a11.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 111px;">Chi tiết</a>
-					</div>	
+							</div>	
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/dien-thoai-ip-atcom-a11.html"><h2 class="title">Điện thoại IP Atcom A11</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
-				</div>
-				<div class="voip-product-item col-md-2" product-id="4254">
-					<div class="voip-product-thumbnail" style="width: 208px; height: 208px;"><img alt="dien-thoai-ip-atcom-a10w" src="https://www.voipmart.vn/wp-content/uploads/2016/05/A10W1-300x300.png" style="width: 206px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4254" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 56px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/dien-thoai-ip-atcom-a10w.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 110px;">Chi tiết</a>
-					</div>	
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/dien-thoai-ip-atcom-a10w.html"><h2 class="title">Điện thoại IP Atcom A10W</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
+					</article>
 				</div>
+
+				<div class="voip-product-item col-md-2" product-id="4130">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail">Chi tiết</a>
+								</div>
+
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<div class="voip-product-item col-md-2" product-id="4130">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail">Chi tiết</a>
+								</div>
+
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+
+					</article>
+				</div>
+
 				<div class="voip-product-item col-md-2" product-id="1351">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="" src="https://www.voipmart.vn/wp-content/uploads/2014/06/jabra_uc_550_mono-300x300.png" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=1351" class="buy" style="left: 12px; top: 57px; width: 182.647px; font-size: 18.2647px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/jabra-uc-voice-550-usb-mono-2.html" class="detail" style="left: 12px; top: 111px; width: 182.647px; font-size: 18.2647px;">Chi tiết</a>
-					</div>	
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="" src="https://www.voipmart.vn/wp-content/uploads/2014/06/jabra_uc_550_mono-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=1351" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/jabra-uc-voice-550-usb-mono-2.html" class="detail">Chi tiết</a>
+								</div>
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/jabra-uc-voice-550-usb-mono-2.html"><h2 class="title">Tai nghe Call Center Jabra UC VOICE™ 550 USB Mono</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/jabra-uc-voice-550-usb-mono-2.html">
+									<h2 class="title">Tai nghe Call Center Jabra UC VOICE™ 550 USB Mono</h2>
+								</a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+					</article>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="item-list-2">
-		<div class="voip-cat-title"><a href="https://www.voipmart.vn/./products/tong-dai-dien-thoai-ip"><h2 class="title">TỔNG ĐÀI IP</h2></a></div>
+	<section class="item-list">
+		<div class="voip-cat-title">
+			<a href="https://www.voipmart.vn/./products/san-pham-ua-chuong">
+				<h2 class="title">Sản phẩm ưa chuộng</h2>
+			</a>
+		</div>
 
 		<div class="voip-products-show">
 			<div class="row-fluid">
+
+				<div class="voip-product-item col-md-2" product-id="5759">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="loa-hoi-nghi-khong-day-bluetooth-konftel-ego" src="https://www.voipmart.vn/wp-content/uploads/2019/12/loa-hoi-nghi-khong-day-bluetooth-konftel-ego-300x300.jpg" class="voip-product-image">
+
+									<div class="void-product-sale-off">-35%</div>
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=5759" class="buy">Đặt hàng</a>
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/loa-hoi-nghi-khong-day-bluetooth-nfc-konftel-ego.html" class="detail">Chi tiết</a>
+								</div>
+								
+
+
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/loa-hoi-nghi-khong-day-bluetooth-nfc-konftel-ego.html">
+									<h2 class="title">Loa Hội Nghị Không Dây Bluetooth NFC Konftel Ego</h2>
+								</a>
+								<div class="cost">
+									<p class="old-price">6.450.000 đ</p>
+									<p>4.186.000 đ</p>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+
 				<div class="voip-product-item col-md-2" product-id="4138">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="tong-dai-ip-Spark-1000-nu" src="https://www.voipmart.vn/wp-content/uploads/2017/09/tong-dai-ip-Spark-1000-nu-300x300.jpg" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4138" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 57px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000nu.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 111px;">Chi tiết</a>
-					</div>	
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-Spark-1000-nu" src="https://www.voipmart.vn/wp-content/uploads/2017/09/tong-dai-ip-Spark-1000-nu-300x300.jpg" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4138" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000nu.html" class="detail">Chi tiết</a>
+								</div>
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000nu.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000/NU</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000nu.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000/NU</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+					</article>
+
 				</div>
+
 				<div class="voip-product-item col-md-2" product-id="4130">
-					<div class="voip-product-thumbnail" style="width: 208px; height: 208px;"><img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" style="width: 206px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 56px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 110px;">Chi tiết</a>
-					</div>	
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail">Chi tiết</a>
+								</div>
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+
+					</article>
 				</div>
-				<div class="voip-product-item col-md-2" product-id="4153">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4153" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 57px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/tong-dai-dien-thoai-ip/soho-systems/tong-dai-ip-xorcom-spark-cxs1001-08xfxs.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 111px;">Chi tiết</a>
-					</div>	
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/tong-dai-dien-thoai-ip/soho-systems/tong-dai-ip-xorcom-spark-cxs1001-08xfxs.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1001 with 08xFXS</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
+				<div class="voip-product-item col-md-2" product-id="4130">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail">Chi tiết</a>
+								</div>
+
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+					</article>
 				</div>
-				<div class="voip-product-item col-md-2" product-id="4150">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4150" class="buy" style="left: 12px; top: 57px; width: 182.647px; font-size: 18.2647px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/tong-dai-dien-thoai-ip/soho-systems/tong-dai-ip-xorcom-spark-cxs1030-06xfxs-02xfxo.html" class="detail" style="left: 12px; top: 111px; width: 182.647px; font-size: 18.2647px;">Chi tiết</a>
-					</div>	
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/tong-dai-dien-thoai-ip/soho-systems/tong-dai-ip-xorcom-spark-cxs1030-06xfxs-02xfxo.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1030 with 06xFXS and 02xFXO</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
+				<div class="voip-product-item col-md-2" product-id="4130">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail">Chi tiết</a>
+								</div>
+
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+
+					</article>
 				</div>
-				<div class="voip-product-item col-md-2" product-id="4148">
-					<div class="voip-product-thumbnail" style="width: 208px; height: 208px;"><img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" style="width: 206px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4148" class="buy" style="left: 12px; top: 56px; width: 182.647px; font-size: 18.2647px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/tong-dai-dien-thoai-ip/soho-systems/tong-dai-ip-xorcom-spark-cxs1012-02xfxs-06xfxo.html" class="detail" style="left: 12px; top: 110px; width: 182.647px; font-size: 18.2647px;">Chi tiết</a>
-					</div>	
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/tong-dai-dien-thoai-ip/soho-systems/tong-dai-ip-xorcom-spark-cxs1012-02xfxs-06xfxo.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1012 with 02xFXS and 06xFXO</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
-				</div>
-				<div class="voip-product-item col-md-2" product-id="4160">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4160" class="buy" style="left: 12px; top: 57px; width: 182.647px; font-size: 18.2647px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/tong-dai-dien-thoai-ip/soho-systems/tong-dai-ip-xorcom-spark-cxs1141-12-pri.html" class="detail" style="left: 12px; top: 111px; width: 182.647px; font-size: 18.2647px;">Chi tiết</a>
-					</div>	
+				<div class="voip-product-item col-md-2" product-id="1351">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="" src="https://www.voipmart.vn/wp-content/uploads/2014/06/jabra_uc_550_mono-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=1351" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/jabra-uc-voice-550-usb-mono-2.html" class="detail">Chi tiết</a>
+								</div>
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/tong-dai-dien-thoai-ip/soho-systems/tong-dai-ip-xorcom-spark-cxs1141-12-pri.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1141 with 1/2 PRI</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/jabra-uc-voice-550-usb-mono-2.html">
+									<h2 class="title">Tai nghe Call Center Jabra UC VOICE™ 550 USB Mono</h2>
+								</a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+					</article>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="item-list-3">
-		<div class="voip-cat-title"><a href="https://www.voipmart.vn/./products/phones"><h2 class="title">ĐIỆN THOẠI</h2></a></div>
+	<section class="item-list">
+		<div class="voip-cat-title">
+			<a href="https://www.voipmart.vn/./products/san-pham-ua-chuong">
+				<h2 class="title">Sản phẩm ưa chuộng</h2>
+			</a>
+		</div>
 
 		<div class="voip-products-show">
 			<div class="row-fluid">
-				<div class="voip-product-item col-md-2" product-id="5800">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="dien-thoai-ip-yealink-w53h" src="https://www.voipmart.vn/wp-content/uploads/2020/03/dien-thoai-ip-yealink-w53h-300x300.jpg" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=5800" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 57px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/phones/dien-thoai-ip/dien-thoai-ip-khong-day-yealink-w53h.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 111px;">Chi tiết</a>
-					</div>	
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/phones/dien-thoai-ip/dien-thoai-ip-khong-day-yealink-w53h.html"><h2 class="title">Điện thoại IP không dây Yealink W53H</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
-				</div>
-				<div class="voip-product-item col-md-2" product-id="5795">
-					<div class="voip-product-thumbnail" style="width: 208px; height: 208px;"><img alt="dien-thoai-ip-yealink-w53p" src="https://www.voipmart.vn/wp-content/uploads/2020/03/dien-thoai-ip-yealink-w53p-300x300.jpg" style="width: 206px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=5795" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 56px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/phones/dien-thoai-ip/dien-thoai-ip-khong-day-yealink-w53p.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 110px;">Chi tiết</a>
-					</div>	
+				<div class="voip-product-item col-md-2" product-id="5759">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="loa-hoi-nghi-khong-day-bluetooth-konftel-ego" src="https://www.voipmart.vn/wp-content/uploads/2019/12/loa-hoi-nghi-khong-day-bluetooth-konftel-ego-300x300.jpg" class="voip-product-image">
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/phones/dien-thoai-ip/dien-thoai-ip-khong-day-yealink-w53p.html"><h2 class="title">Điện thoại IP không dây Yealink W53P</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
-				</div>
-				<div class="voip-product-item col-md-2" product-id="5729">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="tram-phat-cho-dien-thoai-ip-yealink-w60b" src="https://www.voipmart.vn/wp-content/uploads/2019/10/tram-phat-cho-dien-thoai-ip-yealink-w60b-300x300.jpg" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=5729" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 57px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/phones/dien-thoai-ip/tram-phat-dien-thoai-ip-yealink-w60b.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 111px;">Chi tiết</a>
-					</div>	
+									<div class="void-product-sale-off">-35%</div>
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=5759" class="buy">Đặt hàng</a>
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/loa-hoi-nghi-khong-day-bluetooth-nfc-konftel-ego.html" class="detail">Chi tiết</a>
+								</div>
+								
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/phones/dien-thoai-ip/tram-phat-dien-thoai-ip-yealink-w60b.html"><h2 class="title">Trạm phát điện thoại IP Yealink W60B</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
-				</div>
-				<div class="voip-product-item col-md-2" product-id="4957">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="dien-thoai-ip-khong-day-yealink-w56h" src="https://www.voipmart.vn/wp-content/uploads/2017/05/dien-thoai-ip-khong-day-yealink-w56h-300x300.jpg" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4957" class="buy" style="left: 12px; top: 57px; width: 182.647px; font-size: 18.2647px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/phones/dien-thoai-ip/yealink-w56h.html" class="detail" style="left: 12px; top: 111px; width: 182.647px; font-size: 18.2647px;">Chi tiết</a>
-					</div>	
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/phones/dien-thoai-ip/yealink-w56h.html"><h2 class="title">Điện thoại IP Yealink W56H</h2></a>
-						<div class="cost">2.700.000 đ</div>
-					</div>
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/loa-hoi-nghi-khong-day-bluetooth-nfc-konftel-ego.html">
+									<h2 class="title">Loa Hội Nghị Không Dây Bluetooth NFC Konftel Ego</h2>
+								</a>
+								<div class="cost">
+									<p class="old-price">6.450.000 đ</p>
+									<p>4.186.000 đ</p>
+								</div>
+							</div>
+						</div>
+					</article>
 				</div>
 
-				<div class="voip-product-item col-md-2" product-id="4960">
-					<div class="voip-product-thumbnail" style="width: 208px; height: 208px;"><img alt="dien-thoai-ip-yealink-w60p" src="https://www.voipmart.vn/wp-content/uploads/2016/08/dien-thoai-ip-yealink-w60p-300x300.jpg" style="width: 206px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4960" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 56px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/phones/dien-thoai-ip/dien-thoai-ip-yealink-w60p.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 110px;">Chi tiết</a>
-					</div>	
+				<div class="voip-product-item col-md-2" product-id="4138">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-Spark-1000-nu" src="https://www.voipmart.vn/wp-content/uploads/2017/09/tong-dai-ip-Spark-1000-nu-300x300.jpg" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4138" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000nu.html" class="detail">Chi tiết</a>
+								</div>
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/phones/dien-thoai-ip/dien-thoai-ip-yealink-w60p.html"><h2 class="title">Điện thoại IP Yealink W60P</h2></a>
-						<div class="cost">3.413.000 đ</div>
-					</div>
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000nu.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000/NU</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+					</article>
+
 				</div>
 
-				<div class="voip-product-item col-md-2" product-id="5667">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="dien-thoai-ip-panasonic-kx-hdv430" src="https://www.voipmart.vn/wp-content/uploads/2019/09/dien-thoai-ippanasonic-kx-hdv430-300x300.jpg" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=5667" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 57px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/phones/dien-thoai-ip/dien-thoai-ip-panasonic-kx-hdv430.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 111px;">Chi tiết</a>
-					</div>	
+				<div class="voip-product-item col-md-2" product-id="4130">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail">Chi tiết</a>
+								</div>
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/phones/dien-thoai-ip/dien-thoai-ip-panasonic-kx-hdv430.html"><h2 class="title">Điện thoại IP Panasonic KX-HDV430</h2></a>
-						<div class="cost">5.992.650 đ</div>
-					</div>
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+
+					</article>
+				</div>
+
+				<div class="voip-product-item col-md-2" product-id="4130">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail">Chi tiết</a>
+								</div>
+
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<div class="voip-product-item col-md-2" product-id="4130">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail">Chi tiết</a>
+								</div>
+
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+
+					</article>
+				</div>
+
+				<div class="voip-product-item col-md-2" product-id="1351">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="" src="https://www.voipmart.vn/wp-content/uploads/2014/06/jabra_uc_550_mono-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=1351" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/jabra-uc-voice-550-usb-mono-2.html" class="detail">Chi tiết</a>
+								</div>
+
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/jabra-uc-voice-550-usb-mono-2.html">
+									<h2 class="title">Tai nghe Call Center Jabra UC VOICE™ 550 USB Mono</h2>
+								</a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+					</article>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="item-list-4">
-		<div class="voip-cat-title"><a href="https://www.voipmart.vn/./products/tai-nghe-call-center"><h2 class="title">TAI NGHE CALL CENTER</h2></a></div>
+	<section class="item-list">
+		<div class="voip-cat-title">
+			<a href="https://www.voipmart.vn/./products/san-pham-ua-chuong">
+				<h2 class="title">Sản phẩm ưa chuộng</h2>
+			</a>
+		</div>
 
 		<div class="voip-products-show">
 			<div class="row-fluid">
-				<div class="voip-product-item col-md-2" product-id="4964">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="tai-nghe-call-center-jabra-ninja-usb-mono" src="https://www.voipmart.vn/wp-content/uploads/2017/05/tai-nghe-call-center-jabra-ninja-usb-mono-300x300.jpg" style="width: 207px;">
-						<div class="void-product-sale-off">-20%</div>
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4964" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 57px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/tai-nghe-call-center/jabra-ninja-usb-mono.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 111px;">Chi tiết</a>
-					</div>	
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/tai-nghe-call-center/jabra-ninja-usb-mono.html"><h2 class="title">Tai nghe Call Center Jabra Ninja USB Mono</h2></a>
-						<div class="cost"><div class="or-cost">990.000 đ</div><br>790.000 đ</div>
-					</div>
-				</div>
-				<div class="voip-product-item col-md-2" product-id="4968">
-					<div class="voip-product-thumbnail" style="width: 208px; height: 208px;"><img alt="tai-nghe-call-center-jabra-ninja-usb-duo" src="https://www.voipmart.vn/wp-content/uploads/2017/05/tai-nghe-call-center-jabra-ninja-usb-duo-300x300.jpg" style="width: 206px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=4968" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 56px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/tai-nghe-call-center/jabra-ninja-usb-duo.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 110px;">Chi tiết</a>
-					</div>	
+				<div class="voip-product-item col-md-2" product-id="5759">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="loa-hoi-nghi-khong-day-bluetooth-konftel-ego" src="https://www.voipmart.vn/wp-content/uploads/2019/12/loa-hoi-nghi-khong-day-bluetooth-konftel-ego-300x300.jpg" class="voip-product-image">
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/tai-nghe-call-center/jabra-ninja-usb-duo.html"><h2 class="title">Tai nghe Call Center Jabra Ninja USB Duo</h2></a>
-						<div class="cost">Vui lòng gọi (028) 7302 8080</div>
-					</div>
-				</div>
-				<div class="voip-product-item col-md-2" product-id="5615">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="tai-nghe-call-center-plantronics-c5220" src="https://www.voipmart.vn/wp-content/uploads/2017/05/tai-nghe-call-center-plantronics-c520-300x300.jpg" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=5615" class="buy" style="left: 12px; top: 57px; width: 182.647px; font-size: 18.2647px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/tai-nghe-call-center/tai-nghe-call-center-plantronics-c5220-usb-c.html" class="detail" style="left: 12px; top: 111px; width: 182.647px; font-size: 18.2647px;">Chi tiết</a>
-					</div>	
+									<div class="void-product-sale-off">-35%</div>
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=5759" class="buy">Đặt hàng</a>
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/loa-hoi-nghi-khong-day-bluetooth-nfc-konftel-ego.html" class="detail">Chi tiết</a>
+								</div>
+								
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/tai-nghe-call-center/tai-nghe-call-center-plantronics-c5220-usb-c.html"><h2 class="title">Tai nghe Call Center Plantronics C5220, USB-C</h2></a>
-						<div class="cost">2.800.000 đ</div>
-					</div>
+
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/loa-hoi-nghi-khong-day-bluetooth-nfc-konftel-ego.html">
+									<h2 class="title">Loa Hội Nghị Không Dây Bluetooth NFC Konftel Ego</h2>
+								</a>
+								<div class="cost">
+									<p class="old-price">6.450.000 đ</p>
+									<p>4.186.000 đ</p>
+								</div>
+							</div>
+						</div>
+					</article>
 				</div>
 
-				<div class="voip-product-item col-md-2" product-id="5612">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="tai-nghe-call-cneter-plantronics-c5210" src="https://www.voipmart.vn/wp-content/uploads/2017/05/tai-nghe-call-cneter-plantronics-c510-300x300.jpg" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=5612" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 57px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/tai-nghe-call-center/tai-nghe-call-center-plantronics-c5210-usb-c.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 111px;">Chi tiết</a>
-					</div>	
+				<div class="voip-product-item col-md-2" product-id="4138">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-Spark-1000-nu" src="https://www.voipmart.vn/wp-content/uploads/2017/09/tong-dai-ip-Spark-1000-nu-300x300.jpg" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4138" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000nu.html" class="detail">Chi tiết</a>
+								</div>
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/tai-nghe-call-center/tai-nghe-call-center-plantronics-c5210-usb-c.html"><h2 class="title">Tai nghe Call Center Plantronics C5210, USB-C</h2></a>
-						<div class="cost">2.400.000 đ</div>
-					</div>
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000nu.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000/NU</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+					</article>
+
 				</div>
 
-				<div class="voip-product-item col-md-2" product-id="5609">
-					<div class="voip-product-thumbnail" style="width: 208px; height: 208px;"><img alt="tai-nghe-call-center-plantronics-C3225" src="https://www.voipmart.vn/wp-content/uploads/2017/05/tai-nghe-call-center-plantronics-C325.1M-300x300.jpg" style="width: 206px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=5609" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 56px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/tai-nghe-call-center/tai-nghe-call-center-plantronics-c3225-usb-c.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 110px;">Chi tiết</a>
-					</div>	
+				<div class="voip-product-item col-md-2" product-id="4130">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail">Chi tiết</a>
+								</div>
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/tai-nghe-call-center/tai-nghe-call-center-plantronics-c3225-usb-c.html"><h2 class="title">Tai nghe Call Center Plantronics C3225, USB-C</h2></a>
-						<div class="cost">2.000.000 đ</div>
-					</div>
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+
+					</article>
 				</div>
 
-				<div class="voip-product-item col-md-2" product-id="5606">
-					<div class="voip-product-thumbnail" style="width: 209px; height: 209px;"><img alt="" src="https://www.voipmart.vn/wp-content/uploads/2014/06/Plantronics_Blac_53564824552d5-300x300.jpg" style="width: 207px;">
-						<div class="voip-hover-thumbnail-layer"></div>
-						<a href="https://www.voipmart.vn/add-cart?product-id=5606" class="buy" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 57px;">Đặt hàng</a>		 
-						<a href="https://www.voipmart.vn/products/tai-nghe-call-center/tai-nghe-call-center-plantronics-c3220-usb-c.html" class="detail" style="width: 182.647px; font-size: 18.2647px; left: 12px; top: 111px;">Chi tiết</a>
-					</div>	
+				<div class="voip-product-item col-md-2" product-id="4130">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail">Chi tiết</a>
+								</div>
 
-					<div class="voip-product-info">
-						<a href="https://www.voipmart.vn/products/tai-nghe-call-center/tai-nghe-call-center-plantronics-c3220-usb-c.html"><h2 class="title">Tai nghe Call Center Plantronics C3220, USB-C</h2></a>
-						<div class="cost">1.600.000 đ</div>
-					</div>
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<div class="voip-product-item col-md-2" product-id="4130">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="tong-dai-ip-xorcom-CXS1000" src="https://www.voipmart.vn/wp-content/uploads/2015/11/CXS1000-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=4130" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html" class="detail">Chi tiết</a>
+								</div>
+
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/tong-dai-ip-xorcom-spark-cxs1000-compact-full-featured-budget-friendly-ip-pbx.html"><h2 class="title">Tổng đài IP Xorcom Spark – CXS1000</h2></a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+
+					</article>
+				</div>
+
+				<div class="voip-product-item col-md-2" product-id="1351">
+					<article>
+						<div class="row">
+							<div class="voip-product-thumbnail col-md-12 col-sm-3">
+								<div class="img-border">
+									<img alt="" src="https://www.voipmart.vn/wp-content/uploads/2014/06/jabra_uc_550_mono-300x300.png" class="voip-product-image">
+									<div class="voip-hover-thumbnail-layer"></div>
+									<a href="https://www.voipmart.vn/add-cart?product-id=1351" class="buy">Đặt hàng</a>		 
+									<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/jabra-uc-voice-550-usb-mono-2.html" class="detail">Chi tiết</a>
+								</div>
+
+							</div>	
+
+							<div class="voip-product-info col-md-12 col-sm-9">
+								<a href="https://www.voipmart.vn/products/san-pham-ua-chuong/jabra-uc-voice-550-usb-mono-2.html">
+									<h2 class="title">Tai nghe Call Center Jabra UC VOICE™ 550 USB Mono</h2>
+								</a>
+								<div class="cost">Vui lòng gọi (028) 7302 8080</div>
+							</div>
+						</div>
+					</article>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<a href="#">
-		<div class="voip-icon-to-top" style="position: fixed; right: 20px; bottom: 20px; z-index: 99999; display: block;"></div>
-	</a>
 
-	<footer>
-		<div class="voip-news">
-			<!-- <div class="voip-icon-news"></div> -->
+	<section class="top-footer-1">
+		<div class="container-fluid">
 			<div class="row-fluid">
+				<div class="col-sm-4 col-12">
+					<article class="info-1">
+						<div class="title">
+							<img src="https://www.voipmart.vn/wp-content/themes/voip/images/news-logo.png">
+						</div>
+						<div class="content">
+							Được biết như một trung tâm phân phối hàng đầu tại Việt Nam, Lào và Cambodia các sản phẩm, thiết bị, giải pháp và dịch vụ Voice over IP (VoIP) Telephone: VoIP Systems (IP PBX), VoIP Phones, VoIP Gateways, VoIP Cards, VoIP Conference, Video Conference, VoIP Headsets, VoIP Analog Telephone Adators, VoIP Softswitch, Webcam/Camera, GSM Products, VoIP Accessories. Chúng tôi mang lại nhiều sự lựa chọn cho bạn với các sản phẩm tốt nhất và uy tín nhất từ 25 thương hiệu hàng đầu và 500 dòng sản phẩm khác nhau trên thế giới như Xorcom, Cisco, Snom, Patton, Digium, Grandstream, 2N, Cyberdata, Jabra, Plantronics... 
+						</div>
+					</article>
 
-				<div id="voipmart_widget-7" class="col-sm-4 widget_voipmart_widget">
-					<div class="title" style="font-size: 33px;">
-						<img src="https://www.voipmart.vn/wp-content/themes/voip/images/news-logo.png" style="max-width:100%">
-					</div>
-					<div class="content">
-						Được biết như một trung tâm phân phối hàng đầu tại Việt Nam, Lào và Cambodia các sản phẩm, thiết bị, giải pháp và dịch vụ Voice over IP (VoIP) Telephone: VoIP Systems (IP PBX), VoIP Phones, VoIP Gateways, VoIP Cards, VoIP Conference, Video Conference, VoIP Headsets, VoIP Analog Telephone Adators, VoIP Softswitch, Webcam/Camera, GSM Products, VoIP Accessories. Chúng tôi mang lại nhiều sự lựa chọn cho bạn với các sản phẩm tốt nhất và uy tín nhất từ 25 thương hiệu hàng đầu và 500 dòng sản phẩm khác nhau trên thế giới như Xorcom, Cisco, Snom, Patton, Digium, Grandstream, 2N, Cyberdata, Jabra, Plantronics... 
-					</div>
 				</div>
 
-				<div id="latest_news_widget-7" class="col-sm-4 widget_latest_news_widget">
-					<h2 class="title" style="font-size: 33px;"><span style="font-size: 28px;">Tin tức mới nhất</span></h2>
-					<div class="content">
-						<a href="https://www.voipmart.vn/news/ra-mat-ung-dung-softphone-cho-dong-san-pham-xorcom-pbx.html">
-							<span style="text-transform: uppercase; font-weight: bold;">20/02/25</span>&nbsp; Ra mắt ứng dụng Softphone cho dòng sản phẩm Xorcom PBX                            
-						</a>
+				<div class="col-sm-4 col-12">
+					<article class="info-2">
+						<h2 class="title">Tin tức mới nhất</h2>
+						<div class="content">
+							<a href="https://www.voipmart.vn/news/ra-mat-ung-dung-softphone-cho-dong-san-pham-xorcom-pbx.html">
+								<span class="news-date">20/02/25</span>&nbsp; Ra mắt ứng dụng Softphone cho dòng sản phẩm Xorcom PBX                            
+							</a>
 
+							<a href="https://www.voipmart.vn/news/tong-dai-ip-xorcom-dat-diem-cao-nhat-ve-su-hai-long-cua-khach-hang.html">
+								<span class="news-date">19/11/28</span>&nbsp; Tổng đài IP Xorcom đạt điểm cao nhất về sự hài lòng của khách hàng                            
+							</a>
 
-						<a href="https://www.voipmart.vn/news/tong-dai-ip-xorcom-dat-diem-cao-nhat-ve-su-hai-long-cua-khach-hang.html">
-							<span style="text-transform: uppercase; font-weight: bold;">19/11/28</span>&nbsp; Tổng đài IP Xorcom đạt điểm cao nhất về sự hài lòng của khách hàng                            
-						</a>
+							<a href="https://www.voipmart.vn/news/tong-dai-ip-xorcom-chuyen-sang-o-cung-ssd.html">
+								<span class="news-date">19/06/14</span>&nbsp; Tổng đài IP Xorcom chuyển sang ổ cứng SSD                            
+							</a>
 
+							<a href="https://www.voipmart.vn/news/completepbx-5-0-57-cai-thien-bao-mat-va-quan-ly.html">
+								<span class="news-date">18/10/24</span>&nbsp; CompletePBX 5.0.57 – Cải thiện bảo mật và quản lý                            
+							</a>
 
-						<a href="https://www.voipmart.vn/news/tong-dai-ip-xorcom-chuyen-sang-o-cung-ssd.html">
-							<span style="text-transform: uppercase; font-weight: bold;">19/06/14</span>&nbsp; Tổng đài IP Xorcom chuyển sang ổ cứng SSD                            
-						</a>
-
-
-						<a href="https://www.voipmart.vn/news/completepbx-5-0-57-cai-thien-bao-mat-va-quan-ly.html">
-							<span style="text-transform: uppercase; font-weight: bold;">18/10/24</span>&nbsp; CompletePBX 5.0.57 – Cải thiện bảo mật và quản lý                            
-						</a>
-
-
-						<a href="https://www.voipmart.vn/news/completepbx-5-0-55-ho-tro-dien-thoai-ip-gigaset.html">
-							<span style="text-transform: uppercase; font-weight: bold;">18/10/01</span>&nbsp; CompletePBX 5.0.55 – Hỗ trợ điện thoại IP Gigaset                            
-						</a>
-
-					</div>
+							<a href="https://www.voipmart.vn/news/completepbx-5-0-55-ho-tro-dien-thoai-ip-gigaset.html">
+								<span class="news-date">18/10/01</span>&nbsp; CompletePBX 5.0.55 – Hỗ trợ điện thoại IP Gigaset                            
+							</a>
+						</div>
+					</article>
 				</div>
 
-				<div id="text-3" class="col-sm-4 widget_text">			
-					<div class="textwidget">
+				<div class="col-sm-4 col-12">
+					<article class="info-3">
 						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FXorcom-Vi%25E1%25BB%2587t-Nam-110807033686637%2F&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" width="340" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media">			
 						</iframe>
-					</div>
+					</article>		
 				</div>
 
 			</div>
 		</div>
 
-		<div class="voip-hot">
-			<div class="row-fluid" style="overflow:hidden">
-				<div class="col-sm-3">
-					<div class="voip-icon voip-icon-deliver"></div>
-					<a href="huong-dan/van-chuyen.html">
-						<h4 class="title">Giao hàng miễn phí</h4>
-					</a>
-					<p>Giao hàng miễn phí trên toàn quốc</p>
-				</div>
+	</section>
 
-				<div class="col-sm-3">
-					<div class="voip-icon voip-icon-support"></div>
-					<h4 class="title">Tư vấn miễn phí</h4>
-					<p>Cam kết dịch vụ tư vấn sản phẩm &amp; giải pháp tốt nhất</p>
-				</div>
+	<section class="top-footer-2">
+		<div class="row-fluid">
+			<div class="col-sm-3 col-12">
+				<article>
+					<div class="media">
+						<div class="left-media">
+							<div class="voip-icon voip-icon-deliver"></div>
+						</div>
 
-				<div class="col-sm-3">
-					<div class="voip-icon voip-icon-product"></div>
-					<h4 class="title">Sản phẩm chính hãng</h4>
-					<p>Cam kết cung cấp những sản phẩm tốt nhất từ chính hãng</p>
-				</div>
-
-				<div class="col-sm-3">
-					<div class="voip-icon voip-icon-price"></div>
-					<h4 class="title">Giá thành tốt nhất</h4>
-					<p>Cam kết giá thành &amp; dịch vụ sau bán hàng tốt nhất</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="voip-footer" style="border-top:1px solid #dfdfdf">
-			<div class="row-fluid">    
-				<div class="col-sm-3">
-					<div class="voip-footer-container" style="height: 330px;">
-						<h3 class="title">Hỗ trợ khách hàng</h3>
-						<div class="content">
-
-							<a href="https://www.voipmart.vn/./ho-tro-khach-hang/cau-hoi-thuong-gap">Câu hỏi thường gặp</a>    			
-							<a href="https://www.voipmart.vn/ho-tro-khach-hang/trung-tam-ho-tro.html">Trung tâm hỗ trợ</a>
-							<a href="https://www.yingnews.net/suc-khoe/thay-thuoc/an-mach-mh-lieu-phap-phong-ngua-dot-quy-sang-suot/" class="an-mach-mh" target="_blank">An Mạch MH</a>
-
+						<div class="media-body">
+							<h4 class="title">Giao hàng miễn phí</h4>
+							<p>Giao hàng miễn phí trên toàn quốc</p>
 						</div>
 					</div>
+				</article>
+
+			</div>
+
+			<div class="col-sm-3 col-12">
+				<article>
+					<div class="media second-media">
+						<div class="left-media">
+							<div class="voip-icon voip-icon-support"></div>
+						</div>
+
+						<div class="media-body">
+							<h4 class="title">Tư vấn miễn phí</h4>
+							<p>Cam kết dịch vụ tư vấn sản phẩm &amp; giải pháp tốt nhất</p>
+						</div>
+					</div>
+				</article>
+
+			</div>
+
+			<div class="col-sm-3 col-12">
+				<article>
+					<div class="media">
+						<div class="left-media">
+							<div class="voip-icon voip-icon-product"></div>
+						</div>
+
+						<div class="media-body">
+							<h4 class="title">Sản phẩm chính hãng</h4>
+							<p>Cam kết cung cấp những sản phẩm tốt nhất từ chính hãng</p>
+						</div>
+					</div>
+				</article>
+			</div>
+
+			<div class="col-sm-3 col-12">
+				<article>
+					<div class="media">
+						<div class="left-media">
+							<div class="voip-icon voip-icon-price"></div>
+						</div>
+
+						<div class="media-body">
+							<h4 class="title">Giá thành tốt nhất</h4>
+							<p>Cam kết giá thành &amp; dịch vụ sau bán hàng tốt nhất</p>
+						</div>
+					</div>
+				</article>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="top-footer-3">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3 col-12">
+					<article class="voip-footer-container">
+						<h3 class="title">Hỗ trợ khách hàng</h3>
+						<div class="content">
+							<a href="https://www.voipmart.vn/./ho-tro-khach-hang/cau-hoi-thuong-gap">Câu hỏi thường gặp</a> 
+							<a href="https://www.voipmart.vn/ho-tro-khach-hang/trung-tam-ho-tro.html">Trung tâm hỗ trợ</a>
+							<a href="https://www.yingnews.net/suc-khoe/thay-thuoc/an-mach-mh-lieu-phap-phong-ngua-dot-quy-sang-suot/" class="an-mach-mh" target="_blank">An Mạch MH</a>
+						</div>
+					</article>
 				</div>
 
-				<div class="col-sm-3">
-					<div class="voip-footer-container" style="height: 330px;">
+				<div class="col-sm-3 col-12">
+					<article class="voip-footer-container">
 						<h3 class="title">Hướng dẫn</h3>
 						<div class="content">
 							<a href="https://www.voipmart.vn/huong-dan/huong-dan-dat-hang.html">Hướng dẫn đặt hàng</a>
@@ -681,69 +998,56 @@
 							<a href="https://www.voipmart.vn/huong-dan/van-chuyen.html">Vận chuyển</a>
 							<a href="https://www.voipmart.vn/huong-dan/chinh-sach-doi-tra.html">Chính sách đổi trả</a>
 						</div>
-					</div>
+					</article>
 				</div>
 
-				<div class="col-sm-3">
-					<div class="voip-footer-container" style="height: 330px;">
+				<div class="col-sm-3 col-12">
+					<article class="voip-footer-container">
 						<h3 class="title">Dành cho đối tác</h3>
 						<div class="content">
 							<a href="https://www.voipmart.vn/danh-cho-doi-tac/chinh-sach-hop-tac.html">Chính sách hợp tác</a>
 							<a href="https://www.voipmart.vn/danh-cho-doi-tac/dang-ky-dai-ly.html">Đăng ký đại lý</a>
 						</div>
-					</div>
+					</article>
 				</div>
 
-				<div class="col-sm-3">
-					<div class="voip-footer-container" style="height: 330px;">
+				<div class="col-sm-3 col-12">
+					<article class="voip-footer-container">
 						<h3 class="title">Liên hệ</h3>
-						<div class="content" style="overflow: visible;">
+						<div class="content">
 							<dl class="dl-horizontal">
-								<dt style="width: 60px; text-align: left;">Address</dt>
+								<dt  class="dt-title">Address</dt>
 								<dd>:  Tầng 5, 728-730 Võ Văn Kiệt, Phường 1, Quận 5, TP.HCM</dd>
 							</dl>			
 
 							<dl class="dl-horizontal">
-								<dt style="width: 60px; text-align: left;">Email</dt>
+								<dt class="dt-title">Email</dt>
 								<dd>:  info@voipmart.vn</dd>
 							</dl>			
 
-							<dl class="dl-horizontal" style="color: #ff8c00;">
-								<dt style="width: 60px; text-align: left;">Hotline</dt>
+							<dl class="dl-horizontal hotline">
+								<dt class="dt-title">Hotline</dt>
 								<dd>:  (028) 7302 8080</dd>
 							</dl>				
 
 							<dl class="dl-horizontal">
-								<dt style="width: 60px; text-align: left;">Fax</dt>
+								<dt class="dt-title">Fax</dt>
 								<dd>:  (028) 7307 9090</dd>
 							</dl>
-							<table style="width:100%; margin-top: 10px;" border="0">
-								<tbody>
-									<tr>
-										<td scope="" style="width:40%" dir="" id="" align="center" valign="" lang="">
-											<img style="max-width:100%;height:auto" src="./static/img/voipmart_qr_code.jpg" alt="QR Code" title="QR Code" width="93" height="93">
-										</td>
-										<td scope="" style="width:60%;display:none" dir="" id="" align="center" valign="" lang="">
-											<img style="max-width:100%;height:auto; overflow: visible;" src="https://www.voipmart.vn/wp-content/themes/voip/images/dang-ky-bo-cong-thuong.png" width="144" height="93">
-										</td>
-									</tr>
-								</tbody>
-							</table>
+							<div class="qr-code">
+								<img class="qr-code-img" src="./static/img/voipmart_qr_code.jpg" alt="QR Code" title="QR Code" width="93" height="93">
+							</div>
 						</div>
-					</div>
+					</article>
 				</div>
 			</div>
 		</div>
+	</section>
 
-		<div id="voip-copyright"><div class="row-fluid">
-			<div class="col-sm-12" style="text-align: center;">©2009-2019 Voipmart Online Store. All Rights Reserved.</div>
-		<!--
-        <div class="col-sm-6">
-			<a href="https://www.voipmart.vn">VietNam VoIP Marketplace</a> / 
-			<a href="">Online Store</a>
+	<footer>
+		<div id="voip-copyright">
+			<div>©2009-2019 Voipmart Online Store. All Rights Reserved.</div>
 		</div>
-	-->
-</div></div>
-</footer>
+	</footer>
 </body>
 </html>
