@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 11</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		function product_Object(_name,_image,_price){
+			return {
+				name : _name,
+				image : _image,
+				price : _price,
+				toString : function(){
+					return this.price;
+				}
+			};
+		}
+
+		let productA, productB, productC;
+
+		productA = product_Object('productA','imageA', 100);
+		productB = product_Object('productB','imageB', 120);
+		productC = product_Object('productC','imageC', 110);
+
+		let product_List = [productA,productB,productC];
+
+		product_List.sort(function (a, b) {
+			return a.price - b.price;
+		});
+
+		for (var i = 0; i < product_List.length; i++) {
+			console.log(product_List[i].toString());
+		}
+	</script>
+</body>
+</html>
