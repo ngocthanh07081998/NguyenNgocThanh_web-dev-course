@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 7</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		.danger-alert {
+			padding: 20px;
+			background-color: #f44336;
+			color: white;
+		}
+
+		.success-alert {
+			margin-top: 10px;
+			padding: 20px;
+			background-color: #6BBD6E;
+			color: white;
+		}
+
+		.info-alert {
+			margin-top: 10px;
+			padding: 20px;
+			background-color: #47A8F5;
+			color: white;
+		}
+
+		.warning-alert {
+			margin-top: 10px;
+			padding: 20px;
+			background-color: #FFAA2C;
+			color: white;
+		}
+
+		.closebtn {
+			margin-left: 15px;
+			color: white;
+			font-weight: bold;
+			float: right;
+			font-size: 22px;
+			line-height: 20px;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		.closebtn:hover {
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="danger-alert">
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		<strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+	</div>
+
+	<div class="success-alert">
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		<strong>Success!</strong> Indicates a successful or positive action.
+	</div>
+
+	<div class="info-alert">
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		<strong>Info!</strong> Indicates a neutral informative change or action.
+	</div>
+
+	<div class="warning-alert">
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		<strong>Warning!</strong> Indicates a warning that might need attention.
+	</div>
+</body>
+</html>
