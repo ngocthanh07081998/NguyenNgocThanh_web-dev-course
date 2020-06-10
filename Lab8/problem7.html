@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 7</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<style type="text/css">
+		.side-content, .main-content{
+			border: 1px solid grey;
+			height: 500px;
+		}
+
+		.add-new{
+			margin-top: 15px;
+			border: 1px solid grey;
+		}
+
+		.add-new .title, .student-list .title{
+			background-color: #F7F7F7;
+			vertical-align: middle;
+			display: table-cell;
+			height: 50px;
+			width: 900px;
+			padding-left: 15px;
+		}
+
+		.add-new .add-new-input{
+			margin-top: 20px;
+			height: 50px;
+			width: 900px;
+			padding-left: 10px;
+		}
+
+		button{
+			background-color: #007BFF;
+			color: white;
+			border-radius: 5px;
+			border: 1px solid;
+		}
+
+		.student-list{
+			margin-top: 30px;
+		}
+
+		table{
+			margin-top: 15px;
+		}
+
+		.name, .id, .function{
+			width: 200px;
+		}
+
+		.num, .grade{
+			width: 70px;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="container">
+			<h1 class="title">Student Management System</h1>
+			<div class="row">
+				<div class="col-md-2">
+					<div class="side-content">
+						<h3>Class List</h3>
+						<ul>
+							<li><a href="javascript:void(0);" onclick="">Lớp 1</a></li>
+							<li><a href="javascript:void(0);" onclick="">Lớp 2</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-10">
+					<div class="main-content">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="add-new">
+										<div class="title">Edit student's information</div>
+										<div class="add-new-input">
+											<input type="text" name="id" placeholder="2230" required="true">
+											<input type="text" name="stu-name" placeholder="Nguyễn Văn A" required="true">
+											<input type="email" name="mail" placeholder="a@student.com" required="true">
+											<select>
+												<option value="1" selected="selected">Lớp 1</option>
+												<option value="2">Lớp 2</option>
+											</select>
+											<button>Update</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class=student-list>
+										<div class="title">Student List</div>
+										<div class="student-able">
+											<table cellpadding="5">
+												<thead>
+													<tr>
+														<th class="num">#</th>
+														<th class="name">Full Name</th>
+														<th class="id">Student ID</th>
+														<th class="grade">Grade</th>
+														<th class="function">Function</th>
+													</tr>
+												</thead>
+												<tbody>
+													
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
