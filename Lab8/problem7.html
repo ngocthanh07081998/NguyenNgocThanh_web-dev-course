@@ -250,13 +250,14 @@
 			});
 
 
+			var index;
 			$("table").on("click", ".edit-button", function(){
 				$(".edit-section").css("display","block");
 				$(".add-section").css("display","none");
-				var _id = $(this).attr("id");
+				index = $(this).attr("id");
 
 				for (var i = 0; i < student_list.length; i++) {
-					if(student_list[i].Code == _id) {
+					if(student_list[i].Code == index) {
 						$("#edit-name").val(student_list[i].Name);
 						$("#edit-id").val(student_list[i].Code);
 						$("#edit-type").val(student_list[i].CateCode);
@@ -266,10 +267,9 @@
 			});
 
 			$("#update").on("click", function(){
-				var _id = $(".edit-button").attr("id");
-
+				// var _id = $(".edit-button").attr("id");
 				for (var i = 0; i < student_list.length; i++) {
-					if(student_list[i].Code == _id) {
+					if(student_list[i].Code == index) {
 						student_list[i].Name = $("#edit-name").val();
 						student_list[i].Code = $("#edit-id").val();
 						student_list[i].CateCode = $("#edit-type").val();
