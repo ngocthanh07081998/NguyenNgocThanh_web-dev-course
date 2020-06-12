@@ -6,10 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<style type="text/css">
 		.side-content, .main-content{
 			border: 1px solid grey;
-			height: 500px;
+		}
+
+		.side-content{
+			height: 600px;
 		}
 
 		.add-new{
@@ -55,59 +59,128 @@
 		.num, .grade{
 			width: 70px;
 		}
+		.edit-section{
+			display: none;
+		}
 	</style>
 </head>
 <body>
-	<section>
+	<section onload="function_load()">
 		<div class="container">
 			<h1 class="title">Student Management System</h1>
 			<div class="row">
 				<div class="col-md-2">
 					<div class="side-content">
 						<h3>Class List</h3>
-						<ul>
-							<li><a href="javascript:void(0);" onclick="">Lớp 1</a></li>
-							<li><a href="javascript:void(0);" onclick="">Lớp 2</a></li>
+						<ul class="class">
+							<li><a href="#" id="view-all">View all</a></li>
 						</ul>
 					</div>
 				</div>
 
 				<div class="col-md-10">
 					<div class="main-content">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="add-new">
-										<div class="title">Edit student's information</div>
-										<div class="add-new-input">
-											<input type="text" name="id" placeholder="2230" required="true">
-											<input type="text" name="stu-name" placeholder="Nguyễn Văn A" required="true">
-											<input type="email" name="mail" placeholder="a@student.com" required="true">
-											<select>
-												<option value="1" selected="selected">Lớp 1</option>
-												<option value="2">Lớp 2</option>
-											</select>
-											<button>Update</button>
-										</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card add-section">
+									<div class="card-header">
+										Add new student's information
+									</div>
+									<div class="card-body">
+										<form>
+											<div class="form-row align-items-center">
+												<div class="col-sm-3 my-1">
+													<label class="sr-only" for="name">Name</label>
+													<input type="text" class="form-control" id="name" placeholder="Full Name">
+												</div>
+
+												<div class="col-sm-3 my-1">
+													<label class="sr-only" for="id">Name</label>
+													<input type="text" class="form-control" id="id" placeholder="ID">
+												</div>
+
+												<div class="col-sm-2 my-1">
+													<select id="inputState" class="form-control">
+														<option value="Samsung" selected>Samsung</option>
+														<option value="Apple">Apple</option>
+													</select>
+												</div>
+
+												<div class="col-auto my-1">
+													<button type="submit" id="add" class="btn btn-primary">Add</button>
+												</div>
+											</div>
+										</form>
 									</div>
 								</div>
 
-								<div class="col-md-12">
-									<div class=student-list>
-										<div class="title">Student List</div>
-										<div class="student-able">
-											<table cellpadding="5">
+								<div class="card edit-section">
+									<div class="card-header">
+										Edit student's information
+									</div>
+									<div class="card-body">
+										<form>
+											<div class="form-row align-items-center">
+												<div class="col-sm-3 my-1">
+													<label class="sr-only" for="edit-name">Name</label>
+													<input type="text" class="form-control" id="edit-name" placeholder="Full Name">
+												</div>
+
+												<div class="col-sm-3 my-1">
+													<label class="sr-only" for="edit-id">Name</label>
+													<input type="text" class="form-control" id="edit-id" placeholder="ID">
+												</div>
+
+												<div class="col-sm-2 my-1">
+													<select id="edit-type" class="form-control">
+														<option value="Samsung" selected>Samsung</option>
+														<option value="Apple">Apple</option>
+													</select>
+												</div>
+
+												<div class="col-auto my-1">
+													<button type="button" id="update" class="btn btn-primary">Update</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class=student-list>
+									<div class="card">
+										<div class="card-header">
+											Students List
+										</div>
+										<div class="card-body">
+											<form>
+												<div class="form-row align-items-center">
+													<div class="col-sm-2 my-1">
+														<label class="sr-only" for="inlineFormInputName">Name</label>
+														<input type="text" class="form-control" id="search-value" placeholder="Type to search">
+													</div>
+
+													<div class="col-auto my-1">
+														<button type="button" id="search" class="btn btn-primary">Search</button>
+													</div>
+												</div>
+											</form>
+											<table class="table table-borderless">
 												<thead>
 													<tr>
 														<th class="num">#</th>
 														<th class="name">Full Name</th>
 														<th class="id">Student ID</th>
-														<th class="grade">Grade</th>
 														<th class="function">Function</th>
 													</tr>
 												</thead>
 												<tbody>
-													
+
 												</tbody>
 											</table>
 										</div>
@@ -124,7 +197,190 @@
 	</section>
 
 	<script type="text/javascript">
-		
+		var student_list;
+		var class_list;
+
+		$(document).ready(function(){
+			$.get(
+				"http://66.42.50.227/data-ajax.php",
+				{
+					GetProducts: "All"
+				})
+			.done(function(data){
+				student_list = JSON.parse(data);
+
+				student_list.sort(function (a, b) {
+					if (a.Name > b.Name) {
+						return -1;
+					}
+					if (a.Name < b.Name) {
+						return 1;
+					}
+					return 0;
+				});
+
+				showStudent();
+			});				
+
+			$.get(
+				"http://66.42.50.227/data-ajax.php",
+				{
+					GetProducts: "Brand"
+				})
+			.done(function(data){
+				class_list = JSON.parse(data);
+				for (var i = 0; i < class_list.length; i++) {
+					$(".class").append(`<li data-id="${class_list[i].BrandCode}"><a href="#">${class_list[i].BrandName}</a></li>`);
+				}
+			});
+
+			$("table").on("click", ".del-button", function(){
+				var _id = $(this).attr("id");
+				var _confirm = confirm("Are you sure?")
+				if(_confirm) {
+					for (var i = 0; i < student_list.length; i++) {
+						if(student_list[i].Code == _id) {
+							student_list.splice(i, 1);
+							break;
+						}
+					}
+					showStudent();
+				}
+
+			});
+
+
+			$("table").on("click", ".edit-button", function(){
+				$(".edit-section").css("display","block");
+				$(".add-section").css("display","none");
+				var _id = $(this).attr("id");
+
+				for (var i = 0; i < student_list.length; i++) {
+					if(student_list[i].Code == _id) {
+						$("#edit-name").val(student_list[i].Name);
+						$("#edit-id").val(student_list[i].Code);
+						$("#edit-type").val(student_list[i].CateCode);
+						break;
+					}
+				}
+			});
+
+			$("#update").on("click", function(){
+				var _id = $(".edit-button").attr("id");
+
+				for (var i = 0; i < student_list.length; i++) {
+					if(student_list[i].Code == _id) {
+						student_list[i].Name = $("#edit-name").val();
+						student_list[i].Code = $("#edit-id").val();
+						student_list[i].CateCode = $("#edit-type").val();
+						break;
+					}
+				}
+				showStudent();
+				$(".edit-section").css("display","none");
+				$(".add-section").css("display","block");
+			});
+
+			$(".class").on("click", "li", function(){
+				
+				var brand_code = $(this).attr("data-id");
+				$("table tbody").html(" ");
+
+				for (var i = 0; i < student_list.length; i++) {
+					if(student_list[i].CateCode == brand_code) {
+						$("table tbody").append(`
+							<tr>
+							<td>${i+1}</td>
+							<td>${student_list[i].Name}</td>
+							<td>${student_list[i].Code}</td>
+							<td>
+							<a href="#" class="edit-button">Edit</a>
+							<a href="#" id="${student_list[i].Code}" class="del-button">Delete</a>
+							</td>
+							</tr>
+							`);
+					}
+				}
+
+			});
+
+			$("#search").click(function(){
+				
+				var searchkey = $("#search-value").val();
+				$("table tbody").html("");
+				for (var i = 0; i < student_list.length; i++) {
+					var name = student_list[i].Name.toLowerCase();
+					if (name.indexOf(searchkey.toLowerCase()) > -1) {
+						$("table tbody").append(`
+							<tr>
+							<td>${i+1}</td>
+							<td>${student_list[i].Name}</td>
+							<td>${student_list[i].Code}</td>
+							<td>
+							<a href="#" id="${student_list[i].Code}" class="edit-button">Edit</a>
+							<a href="#" id="${student_list[i].Code}" class="del-button">Delete</a>
+							</td>
+							</tr>
+							`);
+					}
+				}
+			});
+
+			$("#add").click(function(){
+				var name = $("#name").val();
+				var id = $("#id").val();
+				var grade = $("#inputState").val();
+
+				student_list.unshift(
+				{
+					"Name": name,
+					"Code": id,
+					"CateCode": grade
+				}
+				);
+				showStudent();
+			});
+
+			$("#view-all").on("click", function(){
+				$.get(
+					"http://66.42.50.227/data-ajax.php",
+					{
+						GetProducts: "All"
+					})
+				.done(function(data){
+					student_list = JSON.parse(data);
+
+					student_list.sort(function (a, b) {
+						if (a.Name > b.Name) {
+							return -1;
+						}
+						if (a.Name < b.Name) {
+							return 1;
+						}
+						return 0;
+					});
+
+					showStudent();
+				});	
+			});
+
+			function showStudent(){
+				$("table tbody").html(" ");
+				for (var i = 0; i < student_list.length; i++) {
+					$("table tbody").append(`
+						<tr>
+						<td id="id">${i+1}</td>
+						<td>${student_list[i].Name}</td>
+						<td>${student_list[i].Code}</td>
+						<td>
+						<a href="#" id="${student_list[i].Code}" class="edit-button">Edit</a>
+						<a href="#" id="${student_list[i].Code}" class="del-button">Delete</a>
+						</td>
+						</tr>
+						`);
+				}
+			}
+		});
 	</script>
 </body>
 </html>
