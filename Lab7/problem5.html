@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -65,6 +66,56 @@
 			font-size: 35px;
 			cursor: pointer;
 		}
+
+		.carousel-control {
+			position: absolute;
+			top: 50px;
+			left: 0;
+			bottom: 0;
+			width: 15%;
+			opacity: .5;
+			filter: alpha(opacity=50);
+			font-size: 20px;
+			color: #fff;
+			text-align: center;
+			text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+		}
+
+		.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+			position: absolute;
+			top: 50%;
+			margin-top: -10px;
+			z-index: 5;
+			display: inline-block;
+		}
+
+		.carousel-control .glyphicon-chevron-left {
+			height: 40px;
+			width: 40px;
+			left: 15px;
+			line-height: 40px;
+		}
+
+		.carousel-control .glyphicon-chevron-right {
+			height: 40px;
+			width: 40px;
+			right: 15px;
+			line-height: 40px;
+		}
+
+		.carousel-control.right {
+			left: auto;
+			right: 0;
+		}
+
+		.fa-chevron-right, .fa-chevron-left{
+			font-size: 50px;
+		}
+
+		a:hover{
+			text-decoration: none;
+			color: white;
+		}
 	</style>
 </head>
 <body>
@@ -72,7 +123,7 @@
 		<div class="row">
 			<div class="col-md-12 col-12">
 				<div class="img-row">
-					<div class="column first-col">
+					<div class="column">
 						<img src="img_nature.jpg" alt="Nature" onclick="myFunction(this);">
 					</div>
 					<div class="column">
@@ -81,7 +132,7 @@
 					<div class="column">
 						<img src="img_mountains.jpg" alt="Mountains" onclick="myFunction(this);">
 					</div>
-					<div class="column last-col">
+					<div class="column">
 						<img src="img_lights.jpg" alt="Lights" onclick="myFunction(this);">
 					</div>
 				</div>
@@ -92,6 +143,14 @@
 					<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 					<img id="expandedImg">
 					<div id="imgtext"></div>
+
+					<a class="left carousel-control" onclick="function_swap()" href="#main-banners" role="button" data-slide="prev">
+						<span class="glyphicon-chevron-left" aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
+					</a>
+
+					<a class="right carousel-control" onclick="function_swap()" href="#main-banners" role="button" data-slide="next">
+						<span class="glyphicon-chevron-right" aria-hidden="true"><i class="fa fa-chevron-right"></i></span>
+					</a>
 				</div>
 			</div>
 
@@ -106,6 +165,10 @@
 			expandImg.src = imgs.src;
 			imgText.innerHTML = imgs.alt;
 			expandImg.parentElement.style.display = "block";
+		}
+
+		function function_swap(){
+			var img_list = document.getElementByClassName();
 		}
 	</script>
 </body>
