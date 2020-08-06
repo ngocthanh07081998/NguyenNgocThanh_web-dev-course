@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Exam - Q2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./static/bootstrap.min.css">
+
+	<style type="text/css">
+		header{
+			background-color: black;
+			padding: 10px;
+			color: white;
+			
+		}
+
+		ul{
+			padding-left: 20px;
+		}
+
+		header h1{
+			margin: 0;
+		}
+
+		footer{
+			background-color: black;
+			padding: 10px;
+			color: white;
+			text-align: center;
+		}
+
+		footer p{
+			margin: 0;
+		}
+
+		.col-md-2{
+			background-color: rgb(204, 204, 204);
+		}
+
+		.side-content, .main-content{
+			margin-top: 20px;
+		}
+
+		.search-form{
+			position: absolute;
+			right: 5px;
+		}
+
+		.add-new{
+			margin-top: 15px;
+			border: 1px solid grey;
+		}
+
+		.add-new .title, .student-list .title{
+			background-color: #F7F7F7;
+			vertical-align: middle;
+			display: table-cell;
+			height: 50px;
+			width: 900px;
+			padding-left: 15px;
+		}
+
+		.add-new .add-new-input{
+			margin-top: 20px;
+			height: 50px;
+			width: 900px;
+			padding-left: 10px;
+		}
+
+		button{
+			background-color: #007BFF;
+			color: white;
+			border-radius: 5px;
+			border: 1px solid;
+		}
+
+		.student-list{
+			margin-top: 30px;
+		}
+
+		table{
+			margin-top: 15px;
+		}
+
+		.name, .id, .function{
+			width: 200px;
+		}
+
+		.num, .grade{
+			width: 70px;
+		}
+		.edit-section{
+			display: none;
+		}
+	</style>
+
+	<!-- Optional JavaScript -->
+	<script src="./static/jquery-3.5.1.min.js"></script>
+	<script src="./static/popper.min.js"></script>
+	<script src="./static/bootstrap.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>CIT STUDENT MANAGEMENT SYSTEM</h1>
+	</header>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<aside class="side-content">
+					<h3>CLASS LIST</h3>
+					<ul class="class">
+
+					</ul>
+				</aside>
+			</div>
+
+			<div class="col-md-10">
+				<main class="main-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card add-section">
+								<div class="card-header">
+									Add a new student
+								</div>
+								<div class="card-body">
+									<form>
+										<div class="form-row align-items-center">
+											<div class="col-sm-3 my-1">
+												<label class="sr-only" for="first-name">first-name</label>
+												<input type="text" class="form-control" id="first-name" placeholder="First Name">
+											</div>
+
+											<div class="col-sm-3 my-1">
+												<label class="sr-only" for="last-name">last-name</label>
+												<input type="text" class="form-control" id="last-name" placeholder="Last name">
+											</div>
+
+											<div class="col-sm-3 my-1">
+												<label class="sr-only" for="email">Email</label>
+												<input type="email" class="form-control" id="email" placeholder="Email">
+											</div>
+
+											<div class="col-sm-2 my-1">
+												<select id="inputState" class="form-control">
+													<option value="Class 1" selected>Class 1</option>
+													<option value="Class 2">Class 2</option>
+													<option value="Class 3">Class 3</option>
+												</select>
+											</div>
+
+											<div class="col-auto my-1">
+												<button type="submit" id="add" class="btn btn-primary">Add</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class=student-list>
+								<div class="card">
+									<div class="card-header">
+										<div class="row">
+											<div class="col-md-6">
+												<h5>STUDENT LIST</h5>
+											</div>
+
+											<div class="col-md-6">
+												<form class="search-form">
+													<div class="form-row align-items-right">
+														<div class="col-sm-7 my-1">
+															<label class="sr-only" for="inlineFormInputName">search-value</label>
+															<input type="text" class="form-control" id="search-value" placeholder="Student Name">
+														</div>
+
+														<div class="col-auto my-1">
+															<button type="button" id="search" class="btn btn-primary">Search</button>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+										
+
+									</div>
+									<div class="card-body">
+
+										<table class="table table-borderless">
+											<thead>
+												<tr>
+													<th class="num">#</th>
+													<th class="name">First Name</th>
+													<th class="name">Last Name</th>
+													<th class="email">Email</th>
+													<th class="stu-class">Class</th>
+													<th class="function">Function</th>
+												</tr>
+											</thead>
+											<tbody>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+
+
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p>Copyright 2020 &#169 CIT Student Management System</p>
+	</footer>
+
+	<script type="text/javascript">
+		var student_list;
+		var class_list;
+
+		$(document).ready(function(){
+			$.get(
+				"http://66.42.50.227/getdata.php",
+				{
+					Type: "Student"
+				})
+			.done(function(data){
+				student_list = JSON.parse(data);
+
+				student_list.sort(function (a, b) {
+					if (a.Name > b.Name) {
+						return -1;
+					}
+					if (a.Name < b.Name) {
+						return 1;
+					}
+					return 0;
+				});
+
+				showStudent();
+			});				
+
+			$.get(
+				"http://66.42.50.227/getdata.php",
+				{
+					Type: "Class"
+				})
+			.done(function(data){
+				class_list = JSON.parse(data);
+				for (var i = 0; i < class_list.length; i++) {
+					$(".class").append(`<li data-id="${class_list[i]}"><a href="#">${class_list[i]}</a></li>`);
+				}
+			});
+
+			$("table").on("click", ".del-button", function(){
+				var _id = $(this).attr("id");
+				var _confirm = confirm("Are you sure?")
+				if(_confirm) {
+					for (var i = 0; i < student_list.length; i++) {
+						if(student_list[i].ID == _id) {
+							student_list.splice(i, 1);
+							break;
+						}
+					}
+					showStudent();
+				}
+
+			});
+
+			$(".class").on("click", "li", function(){			
+				var class_code = $(this).attr("data-id");
+				$("table tbody").html(" ");
+
+				for (var i = 0; i < student_list.length; i++) {
+					if(student_list[i].Class == class_code) {
+						$("table tbody").append(`
+							<tr>
+							<td>${student_list[i].ID}</td>
+							<td>${student_list[i].FistName}</td>
+							<td>${student_list[i].LastName}</td>
+							<td>${student_list[i].Email}</td>
+							<td>${student_list[i].Class}</td>
+							<td>
+							<button type="button" id="${student_list[i].ID}" class="btn btn-primary del-button">Delete</button>
+							</td>
+							</tr>
+							`);
+					}
+				}
+			});
+
+			$("#search").click(function(){				
+				var searchkey = $("#search-value").val();
+				$("table tbody").html("");
+				for (var i = 0; i < student_list.length; i++) {
+					var name = student_list[i].LastName.toLowerCase();
+					if (name.indexOf(searchkey.toLowerCase()) > -1) {
+						$("table tbody").append(`
+							<tr>
+							<td>${student_list[i].ID}</td>
+							<td>${student_list[i].FistName}</td>
+							<td>${student_list[i].LastName}</td>
+							<td>${student_list[i].Email}</td>
+							<td>${student_list[i].Class}</td>
+							<td>
+							<button type="button" id="${student_list[i].ID}" class="btn btn-primary del-button">Delete</button>
+							</td>
+							</tr>
+							`);
+					}
+				}
+			});
+
+			$("#add").click(function(){
+				var first_name = $("#first-name").val();
+				var last_name = $("#last-name").val();
+				var email = $("#email").val();
+				var grade = $("#inputState").val();
+
+				student_list.unshift(
+				{
+					"FistName": first_name,
+					"LastName": last_name,
+					"Email": email,
+					"Class": grade
+				}
+				);
+				showStudent();
+			});
+
+			function showStudent(){
+				$("table tbody").html(" ");
+				for (var i = 0; i < student_list.length; i++) {
+					$("table tbody").append(`
+						<tr>
+						<td>${student_list[i].ID}</td>
+						<td>${student_list[i].FistName}</td>
+						<td>${student_list[i].LastName}</td>
+						<td>${student_list[i].Email}</td>
+						<td>${student_list[i].Class}</td>
+						<td>
+						<button type="button" id="${student_list[i].ID}" class="btn btn-primary del-button">Delete</button>
+						</td>
+						</tr>
+						`);
+				}
+			}
+		});
+	</script>
+</body>
+</html>
